@@ -12,7 +12,7 @@ export default class Navbar extends Component {
     return (
       <div>
         <nav className="NavbarItems">
-          <h1 className="navbar-logo">Sage</h1>
+          <h1 className="navbar-logo">Sage Auto</h1>
 
           <div className="menu-icons" onClick={this.handleClick}>
             <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
@@ -22,10 +22,10 @@ export default class Navbar extends Component {
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>
-                  <a className={item.cName} href="/">
+                  <Link className={item.cName} to={item.url}>
                     <i className={item.icon}></i>
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
