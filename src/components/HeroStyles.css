@@ -1,12 +1,19 @@
-.hero{
+.hero {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
+}
+
+.hero-mid {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
 }
 
 img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
 
 }
@@ -43,5 +50,26 @@ img{
      font-weight: bold;
      letter-spacing: 2px;
      color: #ffffff;
+     
+}
+.hero-text .hide{
+    display: none;
+}
 
+
+@media screen and (max-width: 555p) {
+    .hero-text h1{
+        padding: 10px 20px;
+    }
+    .hero-text p{
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+    .hero-text .show{
+        padding: 0.6rem 1.1rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        background: red;
+    }
+    
 }
