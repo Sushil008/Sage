@@ -13,7 +13,6 @@ export default class Navbar extends Component {
       <div>
         <nav className="NavbarItems">
           <h1 className="navbar-logo">Sage Auto</h1>
-
           <div className="menu-icons" onClick={this.handleClick}>
             <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
